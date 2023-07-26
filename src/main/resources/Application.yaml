@@ -1,0 +1,17 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.example.ApplicationKt.module
+  database:
+    mysql:
+      url: "jdbc:mysql://10.92.21.188:5605/hangame_hist?useUnicode=true&characterEncoding=MS932&jdbcCompliantTruncation=false&useOldAliasMetadataBehavior=true"
+      user: "hangame"
+      password: "kd9838ijm87d"
+      driver: "com.mysql.jdbc.Driver"
+    oracle:
+      url: "jdbc:oracle:thin:@test-maindb-rds.hange.jp:1521:HGJ"
+      user: "hangame"
+      password: "akebono0"
+      driver: "oracle.jdbc.OracleDriver"

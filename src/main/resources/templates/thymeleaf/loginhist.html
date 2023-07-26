@@ -1,0 +1,19 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>loginmonth</th>
+        <th>userid</th>
+    </tr>
+    <tr th:each="userInfo : ${Disp_loginhist}">
+        <td th:text="${userInfo.loginmonth}"></td>
+        <td th:text="${userInfo.userid}"></td>
+    </tr>
+</table>
+</body>
+</html>
